@@ -1,9 +1,9 @@
 def max_finder():
     numbers = []
-    input("Enter the numbers: ")
+
     try:
         while True:
-            numbers.append(int(input()))
+            numbers.append(int(input("Enter the number: ")))
     except:
         print(numbers)
 

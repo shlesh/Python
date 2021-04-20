@@ -1,3 +1,5 @@
+from pathlib import Path
+
 # birth_year = input('Please enter your birth year: ')
 # print(birth_year)
 # age = 2021 - int(birth_year)
@@ -7,9 +9,15 @@
 # print(customer.get("name","Niggaboi69"))
 # print(customer.get("name"))
 
-def square(number):
-    print(number*number)
+# def square(number):
+#     print(number*number)
+
+# square(3)
+# print(square(3))
 
 
-square(3)
-print(square(3))
+path = Path("packages")
+# print(path.glob('*.docx'))
+for file in path.glob('*py'):
+    print(file)
+
